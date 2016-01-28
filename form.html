@@ -1,0 +1,285 @@
+<html>
+<head>
+<style>
+body{
+background-image:url("a.jpg");
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
+
+.notice-success {
+  background: #333366 url(hh.jpg) 10px 50%;
+  border: 2px solid #467813;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px 20px 15px 40px;
+
+}
+
+.notice {
+  background:100% 100% no-repeat;
+  border: 2px solid #467813;
+  border-radius: 1px;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 5px 7px 5px 20px;
+ 
+    border-width: 5px;
+
+}
+input[type=radio]:hover{background-color: #43D47A;
+	-webkit-box-shadow: 0px 4px 0px rgba(39, 174, 96, 1);
+                           cursor:url(t.jpg.jpg),pointer;
+}
+
+
+
+
+
+div.transbox {
+    
+    width: 400px;
+    height: 500px;
+    
+    background-color:#b4eeb4;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+    
+
+}
+.button
+{
+  width: 250px;
+	height: 50px;
+  float: left;
+	color: white;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.button:hover
+{
+  /*
+    Add margin-top to create press effect  
+  */
+	margin-top: 3px;
+}
+.button#red
+{
+	background-color: #9b59b6;
+	-webkit-box-shadow: 0px 7px 0px rgba(142, 68, 173,1.0);
+	-moz-box-shadow: 0px 7px 0px rgba(142, 68, 173,1.0);
+	box-shadow: 0px 7px 0px rgba(142, 68, 173,1.0);
+}
+.button#red:hover
+{
+  /* 
+    Decrease the shadow effect by the size
+    of the margin-top effect. 
+    (3 px in this case, from 7px to 4px)
+  */
+	background-color: #a366bc;
+	-webkit-box-shadow: 0px 4px 0px rgba(142, 68, 173,1.0);
+	-moz-box-shadow: 0px 4px 0px rgba(142, 68, 173,1.0);
+	box-shadow:  0px 4px 0px rgba(142, 68, 173,1.0);
+}
+
+.container1
+{ 
+  position:fixed; 
+  top: 90%;
+  left: 90%;
+  margin-top: -125px;
+  margin-left: -500px;
+  height: 250px;
+  width: 1000px;
+} 
+
+
+body 
+{
+  
+  font-family: 'Nunito', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
+
+@font-face 
+{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito-Regular'), url(http://themes.googleusercontent.com/static/fonts/nunito/v4/0rdItLTcOd8TSMl72RUU5w.woff) format('woff');
+}
+
+
+
+
+
+
+  
+</style>
+<title>youtour_signup</title>
+
+<script type="text/javascript">
+
+function money()
+{
+if (document.getElementById('a1').checked) {
+  var x= document.getElementById('a1').value;
+}
+else if (document.getElementById('a2').checked) {
+  var x= document.getElementById('a2').value;
+}
+else if (document.getElementById('a3').checked) {
+  var x= document.getElementById('a3').value;
+}
+else if (document.getElementById('a4').checked) {
+  var x= document.getElementById('a4').value;
+}
+else if (document.getElementById('a5').checked) {
+  var x= document.getElementById('a5').value;
+}
+if (document.getElementById('b1').checked) {
+  var y= document.getElementById('b1').value;
+}
+else if (document.getElementById('b2').checked) {
+  var y= document.getElementById('b2').value;
+}
+ var f=document.getElementById("p").value;
+var d=document.getElementById("d").value;
+ var no = document.getElementById("no");
+    var option = no.options[no.selectedIndex].value;
+	var budgetpp=x/f;
+	var hotelch=d*y;
+	var res=budgetpp-hotelch;
+	var radius=res/option;
+	//alert(radius);
+	document.getElementById('textarea').value=radius;
+}
+
+
+</script>
+</head>
+<body>
+
+
+  <div class="notice-success">
+ <center><b> YOUTOUR welcomes YOU for a TOUR</b></center>
+
+</div><br>
+  
+<div class="background">
+  <div class="transbox">
+
+
+<form class="div" action="map100.php" method="POST"><font color=#660033>
+	<b><font color=#000000>BUDGET</font>&emsp;</b><br>
+		&emsp;&emsp;&emsp;<input type="radio" name="f_" id="a1"  value="10000" >5000-10,000&nbsp;&nbsp;&nbsp;
+		&emsp;&emsp;&emsp;<input type="radio" name="f_" id="a2"  value="20000">10,000-20,000<br>
+		&emsp;&emsp;&emsp;<input type="radio" name="f_" id="a3"  value="50000">20,000-50,000
+		&emsp;&emsp;&emsp;<input type="radio" name="f_" id="a4"  value="100000">50,000-1,00,000<br>
+		&emsp;&emsp;&emsp;<input type="radio" name="f_" id="a5" value="200000">1,00,000-2,00,000
+		<br>
+	
+		<br>
+	<b><font color=#000000>MODE OF TRAVEL</font></b><br><br>
+		&emsp;&emsp;&emsp;<select id="no">
+			<optgroup label="Airways">
+			 <option value="4">Economy</option>
+			 <option value="13">Buisness</option>
+			</optgroup>
+			<optgroup label="Railways">
+			<option value="4">AC class</option>
+			 <option value="2.5">3 Tier</option>
+			</optgroup>
+			<optgroup label="Roadways">
+			<option value="2">Bus</option>
+			 <option value="6">Car</option>
+			</optgroup>
+		</select><br><br>
+			
+		
+	
+		
+	  <b><font color=#000000> HOTEL</font></b><br>
+		&emsp;&emsp;&emsp;<input type="radio" name="hotel_" value="5500" id="b1">5 Star
+		&emsp;&emsp;&emsp;<input type="radio" name="hotel_" value="11000" id="b2">7 Star<br>
+          <b><font color=#000000>DAYS</font></b><br>
+		&emsp;&emsp;&emsp;<input list="days" id="d"><br>
+		<datalist id="days">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+		<option>13</option>
+		<option>14</option>
+		<option>15</option>
+		<option>16</option>
+		<option>17</option>
+		<option>18</option>
+		<option>19</option>
+		<option>20</option>
+		</datalist><br>
+	<b><font color=#000000>NUMBER OF PERSONS</font></b><br>
+		&emsp;&emsp;&emsp;<input type="text" name="person" id="p"><br><br>
+         <b><font color=#000000>SOURCE</font></b><br>
+		&emsp;&emsp;&emsp;<input type="text" name="source"><br><br>
+		<center> <input type="submit" value="Submit" onclick="money()"></center><br>
+		 <b><font color=#000000>RADIUS:</font></b>
+		&emsp;<input id="textarea" name="rad" ><font size="0.2%">*automatic calculation</font>
+		
+		 
+
+</font>
+</form>
+</div>
+</div>
+
+
+
+  <div class="notice"> <marquee><img src="u.jpg" width="100" height="100"><img src="s.jpg" width="100" height="100"><img src="v.jpg" width="100" height="100">
+<img src="c.jpg" width="100" height="100"><img src="g.jpg" width="100" height="100"><img src="d.jpg" width="100" height="100"><img src="h.jpg" width="100" height="100">
+<img src="m.jpg" width="100" height="100"><img src="i.jpg" width="100" height="100"><img src="j.jpg" width="100" height="100"><img src="n.jpg" width="100" height="100">
+<img src="k.jpg" width="100" height="100"><img src="p.jpg" width="100" height="100"><img src="l.jpg" width="100" height="100"><img src="taj.jpg" width="100" height="100">
+<img src="e.jpg" width="100" height="100"><img src="bb.jpg" width="100" height="100">
+<img src="c.jpg" width="100" height="100"><img src="g.jpg" width="100" height="100"><img src="d.jpg" width="100" height="100"><img src="h.jpg" width="100" height="100">
+<img src="m.jpg" width="100" height="100"><img src="i.jpg" width="100" height="100"><img src="j.jpg" width="100" height="100"><img src="n.jpg" width="100" height="100">
+<img src="k.jpg" width="100" height="100"><img src="p.jpg" width="100" height="100"><img src="l.jpg" width="100" height="100"><img src="taj.jpg" width="100" height="100">
+<img src="e.jpg" width="100" height="100"><img src="bb.jpg" width="100" height="100">
+<img src="c.jpg" width="100" height="100"><img src="g.jpg" width="100" height="100"><img src="d.jpg" width="100" height="100"><img src="h.jpg" width="100" height="100">
+<img src="m.jpg" width="100" height="100"><img src="i.jpg" width="100" height="100"><img src="j.jpg" width="100" height="100"><img src="n.jpg" width="100" height="100">
+<img src="k.jpg" width="100" height="100"><img src="p.jpg" width="100" height="100"><img src="l.jpg" width="100" height="100"><img src="taj.jpg" width="100" height="100">
+<img src="e.jpg" width="100" height="100"><img src="bb.jpg" width="100" height="100">
+
+</marquee></div> 
+
+<nav id="page-nav">
+  <a href="try.html"></a>
+</nav>
+
+
+
+</body>
+</html>
